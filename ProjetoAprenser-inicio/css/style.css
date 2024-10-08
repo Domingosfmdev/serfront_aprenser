@@ -14,15 +14,18 @@
 
     --color-header: #FEFE4A;
     --color-header-detalhes: #050000;
+    --color-escola: #003463;
 
     /* fonts */
+    --font1: sans-serif;
 }
 
-
+body {
+    font-family: var(--font1);
+}
 
 .header-sessao {
     background-color: var(--color1);
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -68,8 +71,8 @@
 }
 
 
+
 .container2 {
-    border: 0px solid blue;
     background-image: linear-gradient(10deg, #FEFE4A 25%, #fefe4a89 40%, #fefe4a03 100%);
 
     display: flex;
@@ -79,7 +82,7 @@
 }
 
 .div1 h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     margin-left: 30px;
 }
 
@@ -91,16 +94,142 @@
 
 .saiba_mais {
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: var(--color-links-fraco);
-    padding: 5px 10px;
+    padding: 4px 10px;
     text-decoration: none;
     color: var(--color1);
 }
 
+.altura {
+    
+}
 
 
+.main-titulo h1{
+    margin:0px auto 20px auto;
+    text-align: center;
+    width: 50%;
+    padding-top: 20px;
+    color: var(--color-escola);
+}
 
 
+.main-cursos {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+
+}
+
+.main-cursos > div{
+    margin: 10px;
+    padding: 0px;
+    width: 280px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-cursos > div img {
+    width: 100%;
+}
+
+.main-cursos >div h2 {
+    font-size: 1.1em;
+    padding: 10px 15px;
+}
+
+.main-cursos >div p {
+    padding: 30px 15px;
+    font-size: 0.85em;
+    color: #6c6b6b;
+}
+
+main {
+    background-color: #cccccc34;
+}
 
 
+.botao-cursos {
+    text-align: center;
+    margin:60px auto;
+    border: 1px solid var(--color-links-fraco);
+    background-color: var(--color-links);
+    width: 200px;
+    padding: 10px;
+}
+
+.botao-cursos a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.escola {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--color-escola);
+    color: white;
+}
+
+
+.nossa__escola-imagem img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -4px;
+}
+
+.nossa__escola-detalhes {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nossa__escola-detalhes h2 {
+    padding-bottom: 40px;
+    font-size: 1.6em;
+}
+
+.nossa__escola-detalhes p {
+    font-size: 0.85em;
+    color: #dbd9d9;
+}
+
+.contatos h2 {
+    color: var(--color-escola);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contatos-mapa img {
+    width: 100%;
+}
+
+.contatos-endereço {
+    text-align: right;
+    color: var(--color-escola);
+    padding: 20px 0px;
+    line-height: 24px;
+    font-size: 0.9em;
+}
+
+footer{
+    height: 80px;
+    background-color: var(--color-header-detalhes);
+    color: var(--color-header);
+    text-align: center;
+    vertical-align: center;
+    padding: 5%;
+}
+
+small {
+    color: white;
+}
+
+small a {
+    text-decoration: none;
+    color: gray;
+}
